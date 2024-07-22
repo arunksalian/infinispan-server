@@ -1,0 +1,1 @@
+Sample infinispan server for keycloak
