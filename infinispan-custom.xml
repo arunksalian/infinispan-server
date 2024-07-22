@@ -31,9 +31,9 @@
 
          <persistence>
             <string-keyed-jdbc-store shared="true" xmlns="urn:infinispan:config:store:jdbc:14.0">
-               <connection-pool connection-url="${infinispan.jdbc.uri:jdbc:postgresql://postgres:5432/keycloak}"
-                              username="${infinispan.jdbc.username:keycloak}"
-                              password="${infinispan.jdbc.password:keycloak}"
+               <connection-pool connection-url="${infinispan.jdbc.uri:jdbc:postgresql://postgres-db:5432/keycloak}"
+                              username="${infinispan.jdbc.username:admin}"
+                              password="${infinispan.jdbc.password:password}"
                               driver="org.postgresql.Driver"/>
                <string-keyed-table drop-on-exit="false"
                                  prefix="ISPN_STRING_TABLE">
