@@ -17,6 +17,11 @@ spec:
       containers:
       - name: infinispan-server
         image: infinispan/server
+        env:
+          - name: USER
+            value: admin
+          - name: PASS
+            value: admin
         ports:
         - containerPort: 11222
 
